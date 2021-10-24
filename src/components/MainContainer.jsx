@@ -1,24 +1,14 @@
-import React, { Component } from 'react'
 
-import Card from 'react-bootstrap/Card'
+import React from "react";
 
-import CardColumns from 'react-bootstrap/CardColumns'
-//import backgroundImages from "../api/background";
-
-import data from "../api/background.json"
 
 export default function MainContainer() {
-    const newdata = data.map((data) => {
-        return (
-            <Card.Title>{data.quote}</Card.Title>
-        )
-    }
-    )
+
 
 
     return (
         <div className="main">
-            <h1>Textbox Webpage</h1>
+
 
 
             <div class="row" id="input-title">
@@ -42,10 +32,11 @@ export default function MainContainer() {
 
 
                 </div>
+                {/* <TextBox /> */}
 
             </div>
-            
-            <CardColumns className=" m-3 p-3 owncard ">  {newdata}  </CardColumns>
+
+
 
         </div>
     )

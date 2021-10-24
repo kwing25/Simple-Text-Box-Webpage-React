@@ -11,12 +11,256 @@ $light: rgba(141, 153, 174, 1);
 $white:rgba(237, 242, 244, 1);
 
 body {
-    background: rgba(239, 35, 60, 1); 
+    background: url("https://images.unsplash.com/photo-1462819067004-905a72ea3996?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    color: #edf2f4ff;
 }
 
-h1 {
-    font-family: $header;
+
+div#input-title {
+    padding: 15px;
+    margin: 10px;
 }
+
+div#main-header {
+    padding-top: 3px;
+}
+
+input#title-text-box {
+    width: 80vw;
+    height: 90px;
+}
+
+input#title-text-box.form-control {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    text-align: center;
+    color: #f1f6fc;
+    background-color: rgba(43, 45, 66, .5);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input#title-text-box.form-control::placeholder {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 5px 9px 14px rgb(0, 78, 157);
+    color: #f1f6fc;
+}
+
+div#clock-quote-container.container {
+    justify-content: center;
+    align-self: center;
+}
+
+div#clock-row:hover {
+    background: rgba(239, 35, 60, .1);
+}
+
+div.col.d-flex {
+    justify-content: center;
+}
+
+div#clockdate {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+div.clockdate-wrapper {
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+    align-items: center;
+}
+
+/*referece to js line 23 */
+#date {
+    font-size: 3.75vw;
+    color: rgba(216, 0, 50, 1);
+    text-align: center;
+}
+
+/*referece to js line 14 */
+#clock {
+    font-size: 3.75vw;
+    text-shadow: 0px 0px 1px #fff;
+    color: rgba(43, 45, 66, 1);
+    text-align: center;
+}
+
+#clock span {
+    color: rgb(189, 189, 189);
+    text-shadow: 0px 0px 1px #333;
+    font-size: 2vw;
+}
+
+/* Quote Area */
+div#quote-row {
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+div#quote-box.quote {
+    background: rgba(43, 45, 66, .1);
+    border-radius: 140px;
+    padding: 10px;
+    margin: 2px;
+}
+
+blockquote.blockquote.mb-0 p {
+    font-size: 14px;
+    color: rgba(43, 45, 66, 1);
+    text-shadow: 0 0 5px rgb(127, 179, 232), 0 0 10px rgb(232, 235, 238), 0 0 15px rgb(232, 235, 238), 0 0 20px rgb(232, 235, 238);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer.blockquote-footer::before {
+    font-size: 11px;
+    color: #ddecfa;
+    text-shadow: 0 0 5px rgba(138, 176, 201, 0.3), 0 0 10px rgba(187, 223, 240, 0.3), 0 0 10px #78a4d1, 0 0 13px #78a4d1, 0 0 9px #78a4d1;
+}
+
+cite {
+    font-size: 11px;
+    color: #ddecfa;
+    text-shadow: 0 0 5px rgba(138, 176, 201, 0.3), 0 0 10px rgba(187, 223, 240, 0.3), 0 0 10px #78a4d1, 0 0 13px #78a4d1, 0 0 9px #78a4d1;
+}
+
+div#textareatcontent {
+    padding: 20px;
+}
+
+textarea#textarea.form-control {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 46px;
+    overflow: none;
+    color: rgba(43, 45, 66, 1);
+    text-align: center;
+    background-color: rgba(237, 242, 244, .5);
+    border: rgba(237, 242, 244, .5);
+    height: calc(40vh - 46px);
+
+}
+
+textarea#textarea.form-control::placeholder {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 46px;
+    color: #ddecfa;
+    text-shadow: 0 0 5px rgba(138, 176, 201, 0.3), 0 0 10px rgba(187, 223, 240, 0.3), 0 0 10px #78a4d1, 0 0 13px #15599d, 0 0 9px #145697;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+footer {
+    padding: 1px;
+}
+
+footer a {
+    font-size: 9px;
+    text-decoration: none;
+    color: rgb(105, 122, 199);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Input Title */
+    div#input-title {
+        margin: 2px;
+        padding: 10px;
+    }
+
+    div#main-header {
+        padding-bottom: 1px;
+    }
+
+    input#title-text-box {
+        height: 45px;
+        width: 330px;
+    }
+
+    input#title-text-box.form-control {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    input#title-text-box.form-control::placeholder {
+        font-size: 20px;
+    }
+
+
+    div#header-row {
+        padding-top: 2px;
+    }
+
+    div.clockdate-wrapper {
+        padding: 5px;
+    }
+
+    #date {
+        font-size: 25px;
+    }
+
+    #clock {
+        font-size: 23px;
+    }
+
+    #clock span {
+        font-size: 23px;
+    }
+
+    div#quote-row {
+        background: rgba(167, 194, 221, 0.4);
+    }
+
+    div#quote-box.quote {
+        padding: 2px;
+    }
+
+    blockquote.blockquote.mb-0 p {
+        font-size: 1.6vh;
+    }
+
+    footer.blockquote-footer::before {
+        font-size: 1.2vh;
+    }
+
+    cite {
+        font-size: 1.2vh;
+    }
+
+
+    textarea#textarea.form-control {
+        font-size: 22px;
+    }
+
+    textarea#textarea.form-control::placeholder {
+        font-size: 22px;
+    }
+
+    footer {
+        position: fixed;
+    }
+
+}
+
+// h1 {
+//     font-family: $header;
+// }
 
 // /* CSS HEX */
 // --space-cadet: #2b2d42ff;
