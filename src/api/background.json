@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "topic": "Motivational",
+        "quote": "It always seems impossible until it's done.",
+        "author": "Nelson Mandela",
+        "src_url": "https://www.brainyquote.com/quotes/nelson_mandela_378967?src=t_motivational"
+    },
+    {
+        "id": 2,
+        "topic": "Motivational",
+        "quote": "Life is 10% what happens to you and 90% how you react to it.",
+        "author": "Charles R. Swindoll",
+        "src_url": "https://www.brainyquote.com/quotes/charles_r_swindoll_388332?src=t_motivational"
+    },
+    {
+        "id": 3,
+        "topic": "Motivational",
+        "quote": "With the new day comes new strength and new thoughts.",
+        "author": "Eleanor Roosevelt",
+        "src_url": "https://www.brainyquote.com/quotes/eleanor_roosevelt_143006?src=t_motivational"
+    },
+    {
+        "id": 4,
+        "topic": "Motivational",
+        "quote": "Knowing is not enough; we must apply. Willing is not enough; we must do.",
+        "author": "Johann Wolfgang von Goethe",
+        "src_url": "https://www.brainyquote.com/quotes/johann_wolfgang_von_goeth_161315?src=t_motivational"
+    },
+    {
+        "id": 5,
+        "topic": "Motivational",
+        "quote": "Quality is not an act, it is a habit.",
+        "author": "Aristotle",
+        "src_url": "https://www.brainyquote.com/quotes/aristotle_379604?src=t_motivational"
+    }
+
+]
