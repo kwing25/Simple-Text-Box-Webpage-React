@@ -1,42 +1,33 @@
-
 import React from "react";
 
+import 'moment-timezone';
+import Clock from 'react-live-clock';
+import TextBox from "./TextBox";
 
 export default function MainContainer() {
-
-
 
     return (
         <div className="main">
 
-
-
-            <div class="row" id="input-title">
-
-                <div class="d-flex justify-content-center" id="main-header">
-
-                    <input type="text" class="form-control" id="title-text-box" maxlength="55"
-                        placeholder="Name This Page !"></input>
-
-                </div>
-
-            </div>
-            <div class="container">
-
-                <div class="row align-items-center">
-
-                    <div class="col" id="textareacontent">
-                        <label for="textarealabel" class="form-label"></label>
-                        <textarea class="form-control" placeholder="Type in Me!" id="textarea"></textarea>
+            <div className="container">
+                <div className="clock-container">
+                    <div id="date">
+                        <Clock format={'dddd, MMMM Do, YYYY'} ticking={true} timezone={'US/Mountain'} />
                     </div>
-
-
+                    <div id="time">
+                        <Clock format={'h:mm:ss A'} ticking={true} timezone={'US/Mountain'} />
+                    </div>
                 </div>
-                {/* <TextBox /> */}
-
             </div>
 
+            <div className="container">
+                <h1 id="title">Text Box Tab <i class="far fa-file-alt"></i></h1>
+                <TextBox />
+            </div>
 
+        <footer>
+            <small><a href="github.com/kwing25">© Kendra Wing 2021</a> </small>
+        </footer>
 
         </div>
     )
